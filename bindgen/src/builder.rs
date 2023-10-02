@@ -59,6 +59,8 @@ impl Builder {
                 .path()
                 .to_str()
                 .expect("sdk path is not utf-8 representable"),
+            "-D__AVX512VLFP16INTRIN_H",
+            "-D__AVX512FP16INTRIN_H",
         ]);
 
         builder = builder
